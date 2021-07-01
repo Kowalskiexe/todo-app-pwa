@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="add.css">
+        <link rel="icon" href="icons/icon144px.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <script src="script.js"></script>
+        <script src="add.js"></script>
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="banner">
+            <h1 onclick="goBack()"><- Back</h1>
+        </div>
+
+        <div id="addForm">
+            Task name:
+            <input type="text" id="taskName">
+            <br>
+            Reset on: <br>
+            <input type="checkbox" id="resetMonday"></input>
+            <label for="resetMonday">Reset on Mondays</label> <br>
+
+            <input type="checkbox" id="resetTuesday"></input>
+            <label for="resetTuesday">Reset on Tuesdays</label> <br>
+
+            <input type="checkbox" id="resetWednesday"></input>
+            <label for="resetWednesday">Reset on Wednesdays</label> <br>
+
+            <input type="checkbox" id="resetThursday"></input>
+            <label for="resetThursday">Reset on Thursdays</label> <br>
+
+            <input type="checkbox" id="resetFriday"></input>
+            <label for="resetFriday">Reset on Fridays</label> <br>
+
+            <input type="checkbox" id="resetSaturday"></input>
+            <label for="resetSaturday">Reset on Saturdays</label> <br>
+
+            <input type="checkbox" id="resetSunday"></input>
+            <label for="resetSunday">Reset on Sundays</label> <br>
+
+            <button onclick="saveTask()">SAVE</button>
+        </div>
+    </body>
+</html>

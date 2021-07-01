@@ -4,13 +4,31 @@
         <link rel="stylesheet" href="style.css">
         <link rel="manifest" href="manifest.json">
         <link rel="icon" href="icons/icon144px.png">
+        <title>Weekly ToDo</title>
         <meta name="theme-color" content="#fff">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
         <link rel="apple-touch-icon" href="icons/icon180.png">
+        <script src="db-retriver.js"></script>
+        <script src="tasks-loader.js"></script>
+        <script src="script.js"></script>
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <script src="script.js"></script>
+        <div id="banner">
+            <h1>Weekly ToDo</h1>
+            <div id="add_button" onclick="add_task()">
+                <span>+</span>
+            </div>
+        </div>
+
+        <div id="divTasks">
+            <div id="dummy" style="height: 80px;"></div>
+        </div>
+
+        <!--service worker-->
         <script>
             if ("serviceWorker" in navigator) {
                 window.addEventListener("load", () => {
